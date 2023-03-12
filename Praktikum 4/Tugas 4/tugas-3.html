@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 3</title>
+    <script src="Jquery.js"></script>
+    <style type="text/css"></style>
+    <script>
+        $(document).ready(function() {
+            $("#fade-in").click(function() {
+                $("#fading-warna").fadeIn("slow");
+            });
+            $("#fade-out").click(function() {
+                $("#fading-warna").fadeOut("slow");
+            });
+            $("#fade-to").click(function() {
+                $("#fading-warna").fadeTo("fast", 0.3);
+            });
+            $("#fade-toggle").click(function() {
+                $("#fading-warna").fadeToggle("slow", "linear");
+            });
+        });
+    </script>
+</head>
+<body>
+    <div id="menu">
+	<input type="button" value="Fade In" id="fade-in" /> <input
+		type="button" value="Fade Out" id="fade-out" /> <input type="button"
+		value="Fade To" id="fade-to" /> <input type="button"
+		value="Fade Out & Fade Back" id="fade-toggle" />
+</div>
+<br>
+<div id="output">
+	<img src="iniwarna.png" id="fading-warna" />
+</div>
+</body>
+</html>

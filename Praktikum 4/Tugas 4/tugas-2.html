@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 2</title>
+
+    <script src="Jquery.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+</script>
+    <!-- <link rel="stylesheet" type="text/css" href="#"> -->
+</head>
+<body>
+
+    <script>
+            $(document).ready(function(){
+            $("input").dblclick(function(){
+                $(this).css({background: "red"});
+            });
+        });
+
+        $( "button" ).click(function() {
+            $( "input" ).remove();
+        });
+    </script>
+    
+    <style type="text/css">
+        input{
+            background: yellow;
+            width: 100px;
+            height: 100px;
+            float: left;
+            margin: 10px;
+            cursor: pointer;
+        }
+    </style>
+
+  <p>Klik 2x jika ingin mengubah warna pada kotak</p>
+  
+    <form id="find" name="formname">
+        <input type="button">
+        <input type="button">
+        <input type="button">
+        <input type="button">
+        <button>RESET</button>
+</form>
+</body>
+</html>
